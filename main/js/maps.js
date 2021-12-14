@@ -12,7 +12,7 @@ function on_geo(position){
 	var map = new naver.maps.Map('map', mapOptions);
 	
 	var markerOptions = {
-		position: new naver.maps.LatLng(37.3595704, 127.105399),
+		position: new naver.maps.LatLng(lat, lng),
 		map: map
 	};
 	var marker = new naver.maps.Marker(markerOptions)
