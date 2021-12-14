@@ -14,3 +14,4 @@ h2 {display:none;}
 .home_header .hamburger_box img {display:block; margin-right:var(--padding-side);}
 
 /* 지도 */
+.map_outer {margin-top:var(--padding-side)}
