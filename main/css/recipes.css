@@ -2,6 +2,7 @@
 
 /* 메인 페이지 값 조정 */
 #main {padding-bottom: var(--footer-height);}
+h1, h2 {display:none;}
 
 /* 탭 메뉴 */
 .tab_menu {width: 100%; overflow: hidden; margin-bottom:30px;}

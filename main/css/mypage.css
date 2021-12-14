@@ -2,6 +2,7 @@
 
 /* 메인 페이지 값 조정 */
 #main {padding-bottom: var(--footer-height);}
+h1, h2 {display:none;}
 .main_inner {padding: var(--padding-side);}
 .member_config {display:flex; flex-direction: row; justify-content: flex-end;}
 .member_config img {width:35px;}

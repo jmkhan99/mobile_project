@@ -3,6 +3,7 @@
 /* 메인 페이지 높이 조정 */
 #main {padding-bottom:var(--footer-height);}
 .main_inner {padding: var(--padding-side);}
+h1, h2 {display: none;}
 
 /* 푸드 입력 */
 

@@ -17,5 +17,5 @@ function on_geo(position){
 
 }
 function error_geo(){
-	alert('a');
+	return;
 }

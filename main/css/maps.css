@@ -3,7 +3,7 @@
 /* 메인 페이지 높이 조정 */
 #main {padding-bottom:var(--footer-height);}
 .main_inner {padding: var(--padding-side); box-sizing:border-box;}
-h2 {display:none;}
+h1, h2 {display:none;}
 
 /* header */
 .home_header {height:75px; background-color:var(--main-color); display:flex; justify-content:space-between; align-items:center; padding-left:var(--padding-side); box-sizing:border-box;}
