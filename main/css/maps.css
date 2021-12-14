@@ -1,0 +1,37 @@
+﻿@import url('common_style.css');
+
+/* 메인 페이지 높이 조정 */
+#main {padding-bottom:var(--footer-height);}
+h2 {display:none;}
+
+/* header */
+.home_header {height:75px; background-color:var(--main-color); display:flex; justify-content:space-between; align-items:center; padding-left:var(--padding-side); box-sizing:border-box;}
+.home_header .main_logo {height:75px; display:flex; flex-direction: row; align-items:center;}
+.home_header .main_logo img{width:55px; margin-right:9px;}
+.home_header .main_logo .main_title{color:#fdfdfd; font-weight:100; position:relative; font-family: 'Cute Font', cursive;}
+.home_header .main_logo .main_title .first{font-size: 35px;}
+.home_header .main_logo .sub_title {font-size:25px; position:absolute; left:0px; top:55px; white-space:nowrap;}
+.home_header .hamburger_box img {display:block; margin-right:var(--padding-side);}
+
+/* 검색 */
+.search_box {margin:0 var(--padding-side);}
+.search_box select{background-color:#cccccc; padding:10px 10px; font-size:17px; color:var(--main-bg-color); border-radius:60px; box-sizing:border-box; width:48%;}
+.guide_text {font-size:18px; margin-top: 30px; margin-bottom: 30px;}
+.select_box {display:flex; flex-direction:row; justify-content:space-between; margin-bottom:5px;}
+.select_box label {width:100%; position:relative;}
+.select_box label>img {width: 12px; position:absolute; top:50%; right:20px; transform:translate(0, -50%);}
+.select_box select {-webkit-appearance:none; appearance:none; width:100%;}
+.select_box label:first-child {margin-right:5%;}
+.search_input_box {border-bottom: 1px solid #e2e2e2; width:100%; position:relative; margin-bottom:35px;}
+.search_input_box label>img {width: 23px; position:absolute; top:50%; transform:translate(0, -50%)}
+.search_input_box .search_input {padding:15px 10px; padding-left:35px; font-size:20px; width:100%; box-sizing:border-box;}
+
+/* 메뉴 부분 */
+.menu1 {width: 100%; margin:0 auto; background-color:var(--main-bg-color);}
+.menu1>div {display:flex; flex-direction:row; margin-bottom:20px;}
+.panel_box {width:33.3%; display:flex; justify-content:center;}
+.menu1 a {width:60%; box-sizing:border-box; margin:0; border:none; display:flex; flex-direction: column; align-items:center;}
+.menu1 a:hover, .menu1 a:focus {background-color:var(--main-bg-color);}
+.menu1 a>img {width:100%; margin-bottom:5px;}
+
+
