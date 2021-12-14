@@ -1,6 +1,4 @@
-﻿var map = new naver.maps.Map('map', mapOptions);
-
-navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
+﻿navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
 function on_geo(position){
 	var lat = position.coords.latitude
@@ -11,6 +9,8 @@ function on_geo(position){
 		center: new naver.maps.LatLng(lat, lng),
 		zoom: 10
 	};
+	var map = new naver.maps.Map('map', mapOptions);
+
 }
 function error_geo(){
 	alert('a');
