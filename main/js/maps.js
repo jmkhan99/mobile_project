@@ -9,7 +9,11 @@ function on_geo(position){
 		center: new naver.maps.LatLng(lat, lng),
 		zoom: 10
 	};
+	var makerOptions = {
+		position: mapOptions.center;
+	};
 	var map = new naver.maps.Map('map', mapOptions);
+	var marker = new naver.maps.Marker(markerOptions)
 
 }
 function error_geo(){
