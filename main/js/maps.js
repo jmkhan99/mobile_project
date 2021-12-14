@@ -10,7 +10,7 @@ function on_geo(position){
 		zoom: 1
 	};
 	var makerOptions = {
-		position: mapOptions.center;
+		position: mapOptions.center
 	};
 	var map = new naver.maps.Map('map', mapOptions);
 	var marker = new naver.maps.Marker(markerOptions)
