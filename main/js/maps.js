@@ -3,8 +3,6 @@
 function on_geo(position){
 	var lat = position.coords.latitude
 	var lng = position.coords.longitude
-	alert (lat)
-	alert (lng)
 	var mapOptions = {
 		center: new naver.maps.LatLng(lat, lng),
 		zoom: 19
