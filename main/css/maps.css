@@ -1,7 +1,7 @@
 ﻿@import url('common_style.css');
 
 /* 메인 페이지 높이 조정 */
-#main {padding-bottom:var(--footer-height);}
+#main {padding: var(--padding-side); box-sizing:border-box; padding-bottom:var(--footer-height);}
 h2 {display:none;}
 
 /* header */
@@ -14,4 +14,3 @@ h2 {display:none;}
 .home_header .hamburger_box img {display:block; margin-right:var(--padding-side);}
 
 /* 지도 */
-#main {padding: var(--padding-side); box-sizing:border-box;}
