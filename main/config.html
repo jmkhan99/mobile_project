@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오늘 뭐 먹지?</title>
+	<link rel="stylesheet" href="css/config.css"/>
+    <script src="js/jquery-3.6.0.js"></script>
+	<script src="js/common.js"></script> 
+</head>
+<body>
+	<!-- 회원가입 페이지 -->
+    <div id="wrap">
+		<h1>설정</h1>
+    	<header id="header" class="signup_header cf">
+			<div class="header_empty_box"></div>
+    	   	<div>
+    	   		<a href="#" class="page_title">설정</a>
+    	   	</div>
+    	   	<div>
+    	   		<a href="#" class="hamburger_box fr">
+    	   			<img src="images/header/hamburger.png" alt="전체 메뉴 이미지"/>
+    	   		</a>
+    	   	</div>
+    	</header>
+    	<section id="main">
+			<h2>설정 항목</h2>
+    	    <div class="main_inner">
+				<div class="setting_menu">
+					<div class="notice">
+						<a href="#"><div class="img_box">
+							<img src="images/config/bi_megaphone.png" alt="공지사항 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>공지사항</span></a>
+					</div><br/>
+					<div class="version_info">
+						<a href="#"><div class="img_box">
+							<img src="images/config/exclamation_mark.png" alt="버전정보 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>버전정보</span></a>
+					</div><br/>
+					<div class="copyright">
+						<a href="#"><div class="img_box">
+							<img src="images/config/copyright.png" alt="저작권 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>저작권</span></a>
+					</div><br/>
+					<div class="line"></div>
+					<div class="alarm">
+						<a href="#"><div class="img_box">
+							<img src="images/config/notice.png" alt="알림 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;<span>알림</span></a>
+					</div><br/>
+					<div class="lock">
+						<a href="#"><div class="img_box">
+							<img src="images/config/lock.png" alt="개인/보안 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;<span>개인/보안</span></a>
+					</div><br/>
+					<div class="brightness">
+						<a href="#"><div class="img_box">
+							<img src="images/config/brightness.png" alt="화면밝기 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;<span>화면 밝기</span></a>
+					</div><br/>
+					<div class="trash_can">
+						<a href="#"><div class="img_box">
+							<img src="images/config/trash_can.png" alt="휴지통 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>캐쉬 삭제</span></a>
+					</div><br/>
+					<div class="logout">
+						<a href="login.html"><div class="img_box">
+							<img src="images/config/logout.png" alt="로그아웃 아이콘"/>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>로그아웃</span></a>
+					</div><br/>
+				</div>
+    		</div>
+    	</section>
+		<footer id="footer">
+			<a href="home.html"><img src="images/footer/home.png" alt="클릭된 홈 아이콘"/><span>홈</span></a>
+			<a href="recipes.html"><img src="images/footer/cook.png" alt="레시피목록 아이콘"/><span>레시피</span></a>
+			<a href="ref.html"><img src="images/footer/ref.png" alt="재료냉장고 아이콘"/><span>재료냉장고</span></a>
+			<a href="mypage.html"><img src="images/footer/my_icon.png" alt="마이페이지 아이콘"/><span>마이페이지</span></a>
+			<a href="config.html"><img src="images/footer/config_red.png" alt="설정 아이콘"/><span class="active_footer_text">설정</span></a>
+		</footer>
+		<div class="hamburger_menu">
+            <div class="hamburger_inner">
+            	<a href="#" class="leftbar fl"></a>
+            	<div class="ham_menu_box fr">
+            		<div class="my_info">
+            			<div class="page_close">
+            				<a class="ham_close_btn" href="#"><img src="images/hamburger/close.png" alt="닫기 버튼"/></a>
+            			</div>					
+            			<div class="profile_box">
+            				<div class="my_profile">
+            					<a href="mypage.html"><img src="images/hamburger/profile.png" alt="프로필 아이콘"/></a>
+            				</div>
+            				<div class="my_id_follow">
+            					<ul>
+            						<li class="my_id">jmkhan99</li>
+            						<li>팔로워100,팔로잉20</li>
+            					</ul>
+            				</div>
+            			</div>
+            		</div>
+            		<div class="my_menu1">
+            			<div class="my_menu_inner">
+            				<div class="notice1">
+            					<a href="#"><img src="images/hamburger/bell.png" alt="알림 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>알림(5)</span></a>
+            				</div>
+            				<div class="shopping">
+            					<a href="#"><img src="images/hamburger/cart.png" alt="카트 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>내 쇼핑정보(0)</span></a>
+            				</div>
+            				<img class="ham_line" src="images/hamburger/border_bottom.png" alt="바텀 라인"/>
+            				<div class="recipe_note">
+            					<a href="#"><img src="images/hamburger/note.png" alt="노트 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>레시피 노트(2)</span></a>
+            				</div>
+            				<div class="scrap_recipe">
+            					<a href="#"><img src="images/hamburger/scrap.png" alt="클립 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>스크랩한 레시피(7)</span></a>
+            				</div>
+            				<div class="watched_recipe">
+            					<a href="#"><img src="images/hamburger/eye.png" alt="눈 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>내가 본 레시피(33)</span></a>
+            				</div>
+            				<div class="review_recipe">
+            					<a href="#"><img src="images/hamburger/review.png" alt="리뷰 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>리뷰(후기)한 레시피(3)</span></a>
+            				</div>
+            				<img class="ham_line" src="images/hamburger/border_bottom.png" alt="바텀 라인"/>
+            				<div class="question">
+            					<a href="#"><img src="images/hamburger/headset.png" alt="문의하기 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>문의하기/고객센터</span></a>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+        </div>		
+	</div>
+	<div class="pop">
+		<span class="popup_text">이 어플은 <span class="mobile_text">핸드폰</span><br>
+		<span class="mode_text">화면 크기 (세로 모드)</span><br>
+		에 최적화되었습니다.</span>
+	</div>
+	<script src="js/iscroll.js"></script>
+</body>
+</html>

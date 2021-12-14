@@ -1,0 +1,31 @@
+﻿@import url('common_style.css');
+
+/* 메인 페이지 값 조정 */
+.main_inner {padding: 0 var(--padding-side); margin-top: 20px;}
+#main {padding-bottom: 50px;}
+h1, h2 {display:none;}
+
+/* SNS 회원가입 */
+.d_member_box {margin-bottom:20px;}
+.d_member>a {display:flex; align-items:center; justify-content:center; font-size:18px; border:1px solid #e1e1e1; padding:10px 10px; margin-bottom:10px; border-radius: 3px; font-size: 17px;}
+.d_member>a>img {margin-right:10px; width:40px;}
+
+/* 또는 (구분선) */
+.or_box {background: url(../images/common/d_line.png) center repeat-x; display:flex; justify-content:center; margin-bottom: 10px;}
+.or_line_text {background-color:var(--main-bg-color); padding:5px 15px; font-size:16px; display:flex; flex-direction:row; align-items:center; color:#949494;}
+
+/* 회원가입 */
+.member_box {display:flex; flex-direction:column; margin-bottom:10px;}
+.member_box>span {font-size:17px; margin-bottom: 5px; }
+.member_box label{position:relative; margin-bottom: 10px;}
+.member_box label img {position:absolute; top:50%; transform:translate(0,-50%); right:0; margin-right:var(--padding-side); width:29px;}
+.member_box input {border:1px solid #c5c5c5; width:100%; font-size:17px; padding: 15px; padding-left:var(--padding-side); padding-right:60px;}
+.pass_confirm {margin-bottom:30px;}
+
+/* 약관 동의 */
+.agree_box {padding: 10px; box-sizing:border-box; margin-bottom:20px;}
+#alltype {margin-right:5px;}
+.agree_box>label>input[type="checkbox"] {margin-right: 10px;}
+.agree_box label {display:block;}
+.bottom_box label:first-child {margin-bottom: 4px;}
+#do_id_signup {display:block; width:100%; padding: 17px 20px; box-sizing:border-box; text-align:center; border-radius:3px; background-color:var(--main-color); color:#ffffff; font-size:20px;}

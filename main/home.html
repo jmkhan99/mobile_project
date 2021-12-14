@@ -1,0 +1,166 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오늘 뭐 먹지?</title>
+	<link rel="stylesheet" href="css/home.css"/>
+    <script src="js/jquery-3.6.0.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<!-- 홈 -->
+    <div id="wrap">
+    	<header class="home_header">
+		   	<a href="#" class="main_logo">
+    	   	    <img src="images/common/logo.png" alt="로고 이미지" />
+    	   	    <h1 class="main_title">
+					<div class="first">오늘 뭐 먹지?</div>
+    	   	    </h1>
+    	   	</a>
+    	   	<a href="#" class="hamburger_box">
+    	   		<img src="images/header/hamburger.png" alt="전체 메뉴 이미지"/>
+    	   	</a>
+    	</header>
+    	<section id="main">
+			<h2>메인 콘텐츠</h2>
+    		<div class="search_box">
+				<p class="guide_text">이럴 땐 이런 음식, <br/>
+				냉장고 안 재료에 맞는 요리를 검색!!</p>
+    			<div class="select_box">
+    				<label for="situation">
+						<img src="images/common/select_arrow.png" alt="select 화살표 이미지"/>
+						<select name="situation" id="situation">
+    						<option value="">- 재료 선택 -</option>
+    						<option value="num0">내 냉장고</option>
+    						<option value="num1">술안주</option>
+    						<option value="num2">손님접대</option>
+    						<option value="num3">초스피드</option>
+    						<option value="num4">다이어트</option>
+    						<option value="num5">간식</option>
+    						<option value="num6">영양식</option>
+    						<option value="num7">도시락</option>
+    						<option value="num8">해장</option>
+    					</select>
+					</label>
+    				<label for="situation2">
+						<img src="images/common/select_arrow.png" alt="select 화살표 이미지"/>
+						<select name="situation2" id="situation2">
+    						<option value="">- 전체 -</option>
+    						<option value="num0">일상</option>
+    						<option value="num1">술안주</option>
+    						<option value="num2">손님접대</option>
+    						<option value="num3">초스피드</option>
+    						<option value="num4">다이어트</option>
+    						<option value="num5">간식</option>
+    						<option value="num6">영양식</option>
+    						<option value="num7">도시락</option>
+    						<option value="num8">해장</option>
+    					</select>
+					</label>
+    			</div>
+    			<form action="recipes.html" class="search_input_box">
+    				<label><img class="search_img" src="images/common/search.png" alt="검색 이미지"/><input type="search" class="search_input" placeholder="검색어를 입력하세요."/></label>
+    			</form>
+    			<div class="menu1">
+    				<div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu1.png" alt="메뉴1"/><span>일상</span></a>
+    					</div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu2.png" alt="메뉴2"/><span>술안주</span></a>
+    					</div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu3.png" alt="메뉴3"/><span>손님접대</span></a>
+    					</div>
+    				</div>
+    				<div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu4.png" alt="메뉴4"/><span>초스피드</span></a>
+    					</div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu5.png" alt="메뉴5"/><span>다이어트</span></a>
+    					</div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu6.png" alt="메뉴6"/><span>간식</span></a>
+    					</div>
+    				</div>
+    				<div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu7.png" alt="메뉴7"/><span>영양식</span></a>
+    					</div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu8.png" alt="메뉴8"/><span>도시락</span></a>
+    					</div>
+    					<div class="panel_box">
+    						<a href="recipes.html"><img src="images/home/section_menu9.png" alt="메뉴9"/><span>해장</span></a>
+    					</div>
+    				</div>
+    			</div>
+			</div>
+    	</section>
+		<footer id="footer">
+			<a href="home.html"><img src="images/footer/home_red.png" alt="클릭된 홈 아이콘"/><span class="active_footer_text">홈</span></a>
+			<a href="recipes.html"><img src="images/footer/cook.png" alt="레시피목록 아이콘"/><span>레시피</span></a>
+			<a href="ref.html"><img src="images/footer/ref.png" alt="재료냉장고 아이콘"/><span>재료냉장고</span></a>
+			<a href="mypage.html"><img src="images/footer/my_icon.png" alt="마이페이지 아이콘"/><span>마이페이지</span></a>
+			<a href="config.html"><img src="images/footer/setting.png" alt="설정 아이콘"/><span>설정</span></a>
+		</footer>	
+		<div class="hamburger_menu">
+            <div class="hamburger_inner">
+            	<a href="#" class="leftbar fl"></a>
+            	<div class="ham_menu_box fr">
+            		<div class="my_info">
+            			<div class="page_close">
+            				<a class="ham_close_btn" href="#"><img src="images/hamburger/close.png" alt="닫기 버튼"/></a>
+            			</div>					
+            			<div class="profile_box">
+            				<div class="my_profile">
+            					<a href="mypage.html"><img src="images/hamburger/profile.png" alt="프로필 아이콘"/></a>
+            				</div>
+            				<div class="my_id_follow">
+            					<ul>
+            						<li class="my_id">jmkhan99</li>
+            						<li>팔로워100,팔로잉20</li>
+            					</ul>
+            				</div>
+            			</div>
+            		</div>
+            		<div class="my_menu1">
+            			<div class="my_menu_inner">
+            				<div class="notice1">
+            					<a href="#"><img src="images/hamburger/bell.png" alt="알림 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>알림(5)</span></a>
+            				</div>
+            				<div class="shopping">
+            					<a href="#"><img src="images/hamburger/cart.png" alt="카트 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>내 쇼핑정보(0)</span></a>
+            				</div>
+            				<img class="ham_line" src="images/hamburger/border_bottom.png" alt="바텀 라인"/>
+            				<div class="recipe_note">
+            					<a href="#"><img src="images/hamburger/note.png" alt="노트 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>레시피 노트(2)</span></a>
+            				</div>
+            				<div class="scrap_recipe">
+            					<a href="#"><img src="images/hamburger/scrap.png" alt="클립 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>스크랩한 레시피(7)</span></a>
+            				</div>
+            				<div class="watched_recipe">
+            					<a href="#"><img src="images/hamburger/eye.png" alt="눈 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>내가 본 레시피(33)</span></a>
+            				</div>
+            				<div class="review_recipe">
+            					<a href="#"><img src="images/hamburger/review.png" alt="리뷰 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>리뷰(후기)한 레시피(3)</span></a>
+            				</div>
+            				<img class="ham_line" src="images/hamburger/border_bottom.png" alt="바텀 라인"/>
+            				<div class="question">
+            					<a href="#"><img src="images/hamburger/headset.png" alt="문의하기 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>문의하기/고객센터</span></a>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+        </div>			
+    </div>
+	<div class="pop">
+		<span class="popup_text">이 어플은 <span class="mobile_text">핸드폰</span><br>
+		<span class="mode_text">화면 크기 (세로 모드)</span><br>
+		에 최적화되었습니다.</span>
+	</div>
+</body>
+</html>	

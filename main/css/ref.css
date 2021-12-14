@@ -1,0 +1,34 @@
+﻿@import url('common_style.css');
+
+/* 메인 페이지 높이 조정 */
+#main {padding-bottom:var(--footer-height);}
+.main_inner {padding: var(--padding-side);}
+
+/* 푸드 입력 */
+
+/* 푸드 리스트 */
+.memo_box {width: 100%;}
+.memo_box>fieldset {width:100%; position:relative; margin-bottom: 40px; box-sizing:border-box; padding:10px;}
+.memo_box legend {font-size:20px;}
+.memo_box select, .memo_box input {font-size: 15px;}
+.input_top {display:flex; flex-direction:row; margin-top: 10px; margin-bottom: 20px;}
+.input_top>#food_category{margin-right:5%;}
+.input_top>#food_category, .input_top>.food_name_input {width: 47.5%; box-sizing:border-box; border: 1px solid #e9e9ed; padding: 5px 10px; height:40px;}
+.input_bottom {margin-bottom: 40px;}
+.input_bottom>.day_title {display:block; margin-bottom: 5px;}
+.num_input_box {display:flex; flex-direction:row;}
+.num_input_box>div>input {width:80px; border: 1px solid #e9e9ed; padding: 5px 0px 5px 20px; box-sizing:border-box;}
+.month_input_box {margin-right: 20px;}
+.food_list {margin-bottom: 20px;}
+.food_list>ul>li {margin-bottom: 5px; display:flex; flex-direction:row; align-items:center; font-size:17px; width:100%;}
+.s_title {margin-bottom: 10px; display:flex; flex-direction:row; align-items:center;}
+.s_title>span {font-size: 21px;}
+.ref_img_box {width:30px; height:30px; line-height:30px; text-align:center; margin-right: 10px;}
+.line {background: url(../images/common/d_line.png) repeat-x center; width: 100%; height: 5px; margin-bottom: 20px;}
+.food_submit {background-color:var(--main-bg-color); position:absolute; left: 50%; bottom:0; transform:translate(-50%,50%);}
+#food_name {width:40%; margin-right: 5%; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+#food_day {width:40%; margin-right: 5%; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; font-size:15px;} 
+#delete_button {width:10%;padding:5px 10px; border-radius:3px; background-color:var(--main-bg-color);}
+#delete_button img {width: 22px; margin-top:6px;}
+
+

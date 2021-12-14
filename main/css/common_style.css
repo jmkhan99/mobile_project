@@ -1,0 +1,81 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+:root {
+  --main-color: #ee0e00;
+  --main-bg-color: #fdfdfd;
+  --main-font-color: #555555;
+  --padding-side: 1.250rem;
+  --footer-height: 82px;
+}
+
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+body {/* -webkit-tap-highlight-color: transparent; */}
+body, select, input{font-family: 'Noto Sans KR', sans-serif; color: var(--main-font-color);}
+.cf:after{content: ''; display: block; clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+a{text-decoration:none; color: var(--main-font-color);}
+html {overflow-y: scroll;}
+input[type="text"], input[type="password"], input[type="search"] {padding:5px 10px; box-sizing:border-box;}
+input, select, button {border:0;}
+button {cursor:pointer;}
+input:focus {outline:none;}
+select:focus {outline:none;}
+
+/* 헤더 */
+#header {width:100%; position:fixed; top:0; z-index:5; box-sizing:border-box; height:75px; background-color:var(--main-color); display:flex; flex-direction:row; align-items:center; justify-content:center;}
+.page_title {font-size:21px; color:var(--main-bg-color); text-align:center;}
+.back_arrow {margin-left: var(--padding-side);}
+.back_arrow img {width:37px;}
+#header div {width:15%;}
+#header div:nth-child(2) {width:70%; text-align:center;}
+#header .hamburger_box {display:flex; justify-content:flex-end; margin-right:var(--padding-side);}
+#header .hamburger_box img {display:block;}
+
+/* 메인 부분 */
+#wrap {height: 100vh; height: calc(var(--vh, 1vh) * 100); position:relative; overflow:visible;}
+#main {width:100%; background-color:var(--main-bg-color); display:none; box-sizing:border-box;}
+
+/* 푸터 */
+#footer {width:100%; position:fixed; bottom:0; z-index:5; display:flex; flex-direction:row; justify-content:center; height:82px; border-top:1px solid #CCCCCC; border-bottom:1px solid #CCCCCC; background-color:var(--main-bg-color);}
+#footer a {display:flex; flex-direction:column; justify-content:center; align-items:center; width:20%;}
+#footer img {margin-bottom:5px; height:30px;}
+#footer a>span {font-size:12px; color:#8A8A8A; overflow:hidden; white-space:nowrap;}
+#footer .active_footer_text {color:var(--main-color);}
+
+/* 팝업 */
+.pop {display:none; position:absolute; top:0; left:0; width:100%; height:100%; z-index:20; background-color:rgba(0,0,0,0.2);}
+.popup_text {display:block; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:var(--main-font-color); font-size:20px; float:left;}
+.mobile_text {color:#ee0e00;}
+.mode_text {color:#002db3;}
+
+/* 햄버거 메뉴 */
+.hamburger_menu {display:none; width:100%; height:100%; position:absolute; top:0; left:0; z-index:10; background-color: rgba(0,0,0,0.8);}
+.hamburger_inner {position:relative; top:0; left:0; width:100%; height:100%; overflow:hidden;}
+.leftbar{width: 15%; height: 100%;}
+.ham_menu_box {width:85%; height: 100%; background-color:var(--main-bg-color); position:absolute; right:-85%; top:0;}
+.my_info{width: 85%; height: 150px; background: url(../images/hamburger/ham_bg.png) no-repeat; background-size: cover; position:fixed; z-index:11;}
+.profile_box {height:100%; display:flex; flex-direction:row; justify-content:center; align-items:center;}
+.my_profile {margin-right:10px;}
+.my_profile a>img {width:58px;}
+.my_id_follow{color: var(--main-bg-color);}
+.my_id_follow .my_id{font-size: 24px; color: var(--main-bg-color);}
+.ham_close_btn {position: absolute; right: 10px; top:10px;}
+.my_menu1 {box-sizing:border-box; padding: 10px var(--padding-side); padding-top:170px; background-color:var(--main-bg-color); overflow:hidden; height:100%; display:flex; flex-direction:column;}
+.my_menu_inner>div {margin-bottom:15px; margin-left:10px;}
+.my_menu_inner>div>a {display:flex; align-items:center; font-size:18px;}
+.my_menu_inner>div>a>span {margin-left:-10px;}
+.my_menu_inner>div>a img {width:25px;}
+.ham_line {margin-bottom: 10px; width:100%; height:2px;}
+
+
+/* PC에서 고정 크기 */
+/* @media screen and (min-width:550px) { */
+/* #wrap {display:none;} */
+/* .pop {display:block;} */
+/* } */

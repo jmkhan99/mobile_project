@@ -1,0 +1,14 @@
+﻿@import url('common_style.css');
+
+/* 메인 페이지 값 조정 */
+#main {padding-bottom: var(--footer-height);}
+.main_inner {padding: var(--padding-side);}
+
+h1, h2 {display:none;}
+
+.setting_menu>div>a {display:flex;}
+.setting_menu img {display:block;}
+.setting_menu>div>a>span {height: 30px; line-height: 30px; font-size: 18px;}
+.img_box {width: 30px; height: 30px; display:flex; align-items:center; justify-content: center;}
+.line {background: url(../images/common/d_line.png) repeat-x center; width: 100%; height: 5px; margin-bottom: 30px;}
+

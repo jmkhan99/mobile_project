@@ -1,0 +1,5 @@
+﻿@import url('../main/css/common_style.css');
+
+/* 메인 페이지 값 조정 */
+.main_inner {padding: 0 var(--padding-side); margin-top: 20px;}
+

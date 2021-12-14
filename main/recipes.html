@@ -1,0 +1,249 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오늘 뭐 먹지?</title>
+	<link rel="stylesheet" href="css/recipes.css"/>
+    <script src="js/jquery-3.6.0.js"></script>
+	<script src="js/common.js"></script> 
+	<script src="js/recipes.js"></script> 
+
+</head>
+<body>
+	<!-- 회원가입 페이지 -->
+    <div id="wrap">
+    	<header id="header" class="signup_header cf">
+			<div class="header_empty_box"></div>
+    	   	<div>
+    	   		<a href="#" class="page_title">레시피</a>
+    	   	</div>
+    	   	<div>
+    	   		<a href="#" class="hamburger_box fr">
+    	   			<img src="images/header/hamburger.png" alt="전체 메뉴 이미지"/>
+    	   		</a>
+    	   	</div>
+    	</header>
+    	<section id="main">
+    	    <div class="main_inner">
+        	    <div class="tab_menu">
+        			<ul>
+        				<li><a href="#recipes" class="ui-btn-active active_tab"><span>레시피목록</span><div class="underline"></div></a></li>
+        				<li><a href="#recommend_recipe"><span>추천레시피</span><div class="underline"></div></a></li>
+        				<li><a href="#best_recipe"><span>Best레시피</span><div class="underline"></div></a></li>
+        			</ul>
+        		</div>
+        		<div class="tab_con">
+					<div class="recipe_list_con">
+						<span class="search_title">레시피 검색</span>
+						<div class="search_box">
+							<div class="select_box">
+								<label for="situation">
+									<img src="images/common/select_arrow.png" alt="select 화살표 이미지"/>
+									<select name="situation" id="situation">
+										<option value="">- 재료 선택 -</option>
+										<option value="num0">내 냉장고</option>
+										<option value="num1">술안주</option>
+										<option value="num2">손님접대</option>
+										<option value="num3">초스피드</option>
+										<option value="num4">다이어트</option>
+										<option value="num5">간식</option>
+										<option value="num6">영양식</option>
+										<option value="num7">도시락</option>
+										<option value="num8">해장</option>
+									</select>
+								</label>
+								<label for="situation2">
+									<img src="images/common/select_arrow.png" alt="select 화살표 이미지"/>
+									<select name="situation2" id="situation2">
+										<option value="">- 전체 -</option>
+										<option value="num0">일상</option>
+										<option value="num1">술안주</option>
+										<option value="num2">손님접대</option>
+										<option value="num3">초스피드</option>
+										<option value="num4">다이어트</option>
+										<option value="num5">간식</option>
+										<option value="num6">영양식</option>
+										<option value="num7">도시락</option>
+										<option value="num8">해장</option>
+									</select>
+								</label>
+							</div>
+						</div>
+						<form class="search_input_box">
+							<label><img class="search_img" src="images/common/search.png" alt="검색 이미지"/><input type="search" class="search_input" placeholder="검색어를 입력하세요."/></label>
+						</form>
+						<div class="r_list_title_box">
+							<span class="r_list_title"><span>레시피</span> 목록</span>
+							<a href="#" class="r_list_more">더보기</a>
+						</div>
+						<ul class="r_list1">
+							<li><a href="#">
+								<div class="pic_box"><span class="list_num">1</span><img src="images/recipe/recipe_list1.png" alt="레시피 리스트 이미지1"/></div>
+								<span class="list_title">옛 맛 그대로~ 동치미 만들기</span></a></li>
+							<li><a href="#">
+								<div class="pic_box"><span class="list_num">2</span><img src="images/recipe/recipe_list2.png" alt="레시피 리스트 이미지2"/></div>
+								<span class="list_title">순두부찌개. 바지락, 고기 없이도 기가 막힌  순두부찌개 만드는 법</span></a>
+							</li>
+							<li><a href="#">
+								<div class="pic_box"><span class="list_num">3</span><img src="images/recipe/recipe_list3.png" alt="레시피 리스트 이미지3"/></div>
+								<span class="list_title">백선생 시금치무침 만드는 법 초간단</span></a>
+							</li>
+						</ul>
+						<ul class="r_list2">
+							<li><a href="#">
+								<div class="pic_box"><span class="list_num">4</span><img src="images/recipe/recipe_list4.png" alt="레시피 리스트 이미지4"/></div>
+								<span class="list_title">소고기무국 황금레시피, 재료는 간단 맛은 최고</span></a>
+							</li>
+							<li><a href="#">
+								<div class="pic_box"><span class="list_num">5</span><img src="images/recipe/recipe_list5.png" alt="레시피 리스트 이미지5"/></div>
+								<span class="list_title">김장김치 양념 비율, 배추 30포기 생새우와 고춧가루 비율</span></a>
+							</li>
+							<li><a href="#">
+								<div class="pic_box"><span class="list_num">6</span><img src="images/recipe/recipe_list6.png" alt="레시피 리스트 이미지6"/></div>
+								<span class="list_title">엄마의 레시피, 소고기 미역국 끓이는 법</span></a>
+							</li>								
+						</ul>
+					</div>
+					<div class="r_recipe_con">
+						<div class="r_recipe_title tab_con_title">
+							<img src="images/recipe/recommend_recipe.png" alt="맞춤레시피 타이틀"/>
+						</div>	
+						<div class="r_recipe">
+							<ul>
+								<li><a href="#" class="r_recipe1"><img src="images/recipe/r_recipe1.png" alt="맞춤레시피1"/><span>닭가슴살 맛있게 먹기! 통마늘 닭가슴살 강정</span></a></li>
+								<li><a href="#" class="r_recipe2"><img src="images/recipe/r_recipe2.png" alt="맞춤레시피2"/><span>백종원 닭볶음탕 맛있게! 닭볶음탕 만드는법</span></a></li>
+								<li><a href="#" class="r_recipe3"><img src="images/recipe/r_recipe3.png" alt="맞춤레시피3"/><span>소갈비찜 매니아!! 야들야들 소갈비찜</span></a></li>
+							</ul>
+						</div>
+						<div class="recommend_keyword">
+							<h3>추천 키워드</h3>
+							<div class="r_keyword1">
+								<ul>
+									<li><a href="#">#밑반찬</a></li>
+									<li><a href="#">#간단요리</a></li>
+									<li><a href="#">#백종원</a></li>
+								</ul>
+							</div>
+							<div class="r_keyword2">
+								<ul>
+									<li><a href="#">#다이어트</a></li>
+									<li><a href="#">#면역력</a></li>
+									<li><a href="#">#저칼로리</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="tv_recipe_title tab_con_title">
+							<img src="images/recipe/tv_recipe.png" alt="추천tv레시피 타이틀"/>
+						</div>
+						<div class="tv_recipe">
+							<ul>
+								<li>
+									<a href="#" class="tv_recipe1"><img src="images/recipe/tv_recipe1.png" alt="추천tv레시피1"/><span>백종원의 아스파라거스토마토구이 & 아스파라거스 마늘볶음</span></a>
+								</li>
+								<li>
+									<a href="#" class="tv_recipe2"><img src="images/recipe/tv_recipe2.png" alt="추천tv레시피2"/><span>다른 반찬 필요 없음! 맛남의 광장 백종원의 다시마 쌈장</span></a>
+								</li>
+							</ul>
+						</div>
+						<div class="today_recipe_title tab_con_title">
+							<img src="images/recipe/today_recipe.png" alt="오늘의 추천레시피 타이틀"/>
+						</div>
+						<div class="today_recipe">
+							<ul>
+								<li>
+									<a href="#" class="today_recipe1"><img src="images/recipe/today_recipe1.png" alt="오늘의 추천레시피1"/><span>초간단! 오이초무침! 상콤한게 맛있어요</span></a>
+								</li>
+								<li>
+									<a href="#" class="today_recipe2"><img src="images/recipe/today_recipe2.png" alt="오늘의 추천레시피2"/><span>내 몸의 독소제거 해독주스</span></a>
+								</li>
+								<li>
+									<a href="#" class="today_recipe3"><img src="images/recipe/today_recipe3.png" alt="오늘의 추천레시피3"/><span>초간단 야식 비빔국수 만들기</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="best_recipe_con">
+						<div class="best_slide_box">
+							<ul class="best_recipe_box">
+								<li>
+									<a href="#" class="best_recipe1"><span class="b_recipe_title">가지 스테이크</span><span class="b_recipe_sub">고영관 님</span><img src="images/recipe/best_rec1.png" alt="Best레시피1"/></a>
+								</li>
+								<li>
+									<a href="#" class="best_recipe2"><span class="b_recipe_title">야들야들 소갈비찜</span><span class="b_recipe_sub">행복요리사 님</span><img src="images/recipe/best_rec2.png" alt="Best레시피2"/></a>
+								</li>
+								<li>
+									<a href="#" class="best_recipe3"><span class="b_recipe_title">백종원 닭볶음탕</span><span class="b_recipe_sub">행복요리사 님</span><img src="images/recipe/best_rec3.png" alt="Best레시피3"/></a>
+								</li>
+							</ul>
+						</div>					
+					</div>
+        		</div>
+    		</div>
+    	</section>
+		<footer id="footer">
+			<a href="home.html"><img src="images/footer/home.png" alt="클릭된 홈 아이콘"/><span>홈</span></a>
+			<a href="recipes.html"><img src="images/footer/cook_red.png" alt="레시피목록 아이콘"/><span class="active_footer_text">레시피</span></a>
+			<a href="ref.html"><img src="images/footer/ref.png" alt="재료냉장고 아이콘"/><span>재료냉장고</span></a>
+			<a href="mypage.html"><img src="images/footer/my_icon.png" alt="마이페이지 아이콘"/><span>마이페이지</span></a>
+			<a href="config.html"><img src="images/footer/setting.png" alt="설정 아이콘"/><span>설정</span></a>
+		</footer>
+		<div class="hamburger_menu">
+            <div class="hamburger_inner">
+            	<a href="#" class="leftbar fl"></a>
+            	<div class="ham_menu_box fr">
+            		<div class="my_info">
+            			<div class="page_close">
+            				<a class="ham_close_btn" href="#"><img src="images/hamburger/close.png" alt="닫기 버튼"/></a>
+            			</div>					
+            			<div class="profile_box">
+            				<div class="my_profile">
+            					<a href="mypage.html"><img src="images/hamburger/profile.png" alt="프로필 아이콘"/></a>
+            				</div>
+            				<div class="my_id_follow">
+            					<ul>
+            						<li class="my_id">jmkhan99</li>
+            						<li>팔로워100, 팔로잉20</a></li>
+            					</ul>
+            				</div>
+            			</div>
+            		</div>
+            		<div class="my_menu1">
+            			<div class="my_menu_inner">
+            				<div class="notice1">
+            					<a href="#"><img src="images/hamburger/bell.png" alt="알림 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>알림(5)</span></a>
+            				</div>
+            				<div class="shopping">
+            					<a href="#"><img src="images/hamburger/cart.png" alt="카트 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>내 쇼핑정보(0)</span></a>
+            				</div>
+            				<img class="ham_line" src="images/hamburger/border_bottom.png" alt="바텀 라인"/>
+            				<div class="recipe_note">
+            					<a href="#"><img src="images/hamburger/note.png" alt="노트 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>레시피 노트(2)</span></a>
+            				</div>
+            				<div class="scrap_recipe">
+            					<a href="#"><img src="images/hamburger/scrap.png" alt="클립 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>스크랩한 레시피(7)</span></a>
+            				</div>
+            				<div class="watched_recipe">
+            					<a href="#"><img src="images/hamburger/eye.png" alt="눈 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>내가 본 레시피(33)</span></a>
+            				</div>
+            				<div class="review_recipe">
+            					<a href="#"><img src="images/hamburger/review.png" alt="리뷰 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>리뷰(후기)한 레시피(3)</span></a>
+            				</div>
+            				<img class="ham_line" src="images/hamburger/border_bottom.png" alt="바텀 라인"/>
+            				<div class="question">
+            					<a href="#"><img src="images/hamburger/headset.png" alt="문의하기 아이콘"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>문의하기/고객센터</span></a>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+        </div>		
+	</div>
+	<div class="pop">
+		<span class="popup_text">이 어플은 <span class="mobile_text">핸드폰</span><br>
+		<span class="mode_text">화면 크기 (세로 모드)</span><br>
+		에 최적화되었습니다.</span>
+	</div>
+	<script src="js/iscroll.js"></script>
+</body>
+</html>

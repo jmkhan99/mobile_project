@@ -1,0 +1,25 @@
+﻿@import url('common_style.css');
+
+/* 메인 페이지 값 조정 */
+#main {padding-bottom: var(--footer-height);}
+.main_inner {padding: var(--padding-side);}
+.member_config {display:flex; flex-direction: row; justify-content: flex-end;}
+.member_config img {width:35px;}
+.name {display:flex; flex-direction: column; justify-content: center;}
+.name_color {color: #FFA959; font-size:24px; margin-bottom: 20px;}
+.name_plus {font-size: 24px;}
+.name_title {font-size:22px; margin-bottom: 20px;}
+.mypoint {width: 100%; display:flex; flex-direction:row; margin-bottom: 30px; font-size:14px;}
+.mypoint img {width: 100%;}
+.my_point_box, .emoney_box, .rpoint_box {width: 33.3%; padding:5px; box-sizing:border-box; display:flex; flex-direction:row; justify-content:center; position:relative; align-items:center;}
+.line {background: url(../images/common/d_line.png) repeat-x center; width: 100%; height: 5px; margin-bottom: 30px;}
+.point_txt, .emoney_txt, .rpoint_txt {position:absolute; display:block; top:50%; left:50%; transform: translate(-50%, -50%);}
+.point_txt>span, .emoney_txt>span, .rpoint_txt>span {color:var(--main-bg-color);}
+.mymenu {width:100%; display:flex; flex-direction:column;}
+.mymenu img {height:60px; margin-right: 15px;}
+.mymenu .num {font-size:40px; font-weight:bold; margin-right:2px;}
+.mymenu>.top_my_box {margin-bottom: 30px;}
+.mymenu>.top_my_box, .mymenu>.bottom_my_box {width:100%; display:flex; flex-direction:row; justify-content:center; align-items:center;}
+.mymenu>.top_my_box>div, .mymenu>.bottom_my_box>div {width: 50%; display:flex; flex-direction:row; justify-content:center; align-items:center;}
+
+
