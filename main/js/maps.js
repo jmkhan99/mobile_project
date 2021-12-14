@@ -7,7 +7,7 @@ function on_geo(position){
 	console.log (lng)
 	var mapOptions = {
 		center: new naver.maps.LatLng(lat, lng),
-		zoom: 20
+		zoom: 17
 	};
 	var markerOptions = {
 		position: mapOptions.center
