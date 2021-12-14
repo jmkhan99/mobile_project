@@ -1,24 +1,26 @@
-﻿var mapOptions = {
+﻿var map = new naver.maps.Map('map', mapOptions);
+
+
+var mapOptions = {
     center: new naver.maps.LatLng(37.3595704, 127.105399),
     zoom: 10
 };
 
-var position = navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
+navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
-function on_geo(){
+function on_geo(position){
 	console.log(position);
 }
 function error_geo(){
 	alert('a');
 }
 
-var map = new naver.maps.Map('map', mapOptions);
 
-var map = null;
+// var map = null;
 
-function initMap() {
-    map = new naver.maps.Map('map', {
-        center: new naver.maps.LatLng(37.3595704, 127.105399),
-        zoom: 10
-    });
-}
+// function initMap() {
+    // map = new naver.maps.Map('map', {
+        // center: new naver.maps.LatLng(37.3595704, 127.105399),
+        // zoom: 10
+    // });
+// }
