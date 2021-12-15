@@ -1,12 +1,19 @@
 ﻿navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
-var container = document.getElementById('map'),
-    options = {
-         center: new kakao.maps.LatLng(33.450701, 126.570667),
-         level: 3
-    };
- 
-var map = new kakao.maps.Map(container, options);
+function on_geo(position){
+	var container = document.getElementById('map'),
+		options = {
+			 center: new kakao.maps.LatLng(33.450701, 126.570667),
+			 level: 17
+		};
+	 var map = new kakao.maps.Map(container, options);
+}
+function error_geo(){
+	return;
+}
+
+
+
 
 
 // 네이버
