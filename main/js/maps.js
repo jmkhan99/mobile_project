@@ -6,7 +6,7 @@ function on_geo(position){
 	var container = document.getElementById('map'),
 		options = {
 			 center: new kakao.maps.LatLng(lat, lng),
-			 level: 17
+			 level: 3
 		};
 	 var map = new kakao.maps.Map(container, options);
 }
