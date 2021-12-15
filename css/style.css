@@ -2,4 +2,22 @@
 
 /* 메인 페이지 값 조정 */
 .main_inner {padding: 0 var(--padding-side); margin-top: 20px;}
+h1, h2 {display:none;}
+
+/* 안내 공통 */
+.info_bg{width:100%; height:100vh; height: calc(var(--vh, 1vh) * 100); position:relative; background: url(../main/images/login/title_background.png) no-repeat; background-size: cover;}
+.start_bg{width:100%; height:100vh; height: calc(var(--vh, 1vh) * 100); position:relative; background: var(--main-bg-color); }
+.start_logo {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
+.start_logo1 {z-index:2;}
+.start_logo img {width: 130px;}
+
+.info_bg img {width:100%;}
+.jump_btn {display:block; position: absolute; right:var(--padding-side); top:var(--padding-side); color:var(--main-bg-color); z-index:3; padding: 10px; background-color: rgba(0,0,0,.5); text-decoration:underline; border-radius: 2px;}
+.phone_box {position: absolute; top:0; left:50%; transform:translate(-50%, -100%); width:70%; margin-top: 20px;}
+.phone_box img{width:100%; display:block;}
+.info_txt1 {height:150px; width:100%; background-color:#333333; color:var(--main-bg-color); position:relative; z-index:3; padding-left:var(--padding-side);}
+.info_txt1>span {display:block; font-size:20px; margin-top: 20px; margin-bottom: 15px;}
+/* .color_red {color:#151515;} */
+.next_btn {display:block; width:100%; height:50px; text-align:center; line-height: 50px; background-color:#bd8846; color:var(--main-bg-color);}
+#info_footer {width:100%; display:flex; flex-direction: column; position:fixed; bottom:0; z-index:2;}
 

@@ -89,7 +89,8 @@ function startTimer() {
             timerClock.text(returnFormattedToSeconds(0));
 
             $('#times-up-modal').openModal();
-
+			/* cordova vibration 플러그인 진동 */
+			navigator.vibrate(3000);
             pauseTimer();
         }
     }, 1000);
@@ -135,4 +136,9 @@ function returnFormattedToSeconds(time){
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
     return minutes + ":" + seconds;
+}
+
+/* cordova app 진동 */
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
 }
