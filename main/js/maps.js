@@ -1,6 +1,5 @@
 ﻿navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
-
 function on_geo(position){
 	var lat = position.coords.latitude
 	var lng = position.coords.longitude
