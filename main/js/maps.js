@@ -4,13 +4,20 @@ function on_geo(position){
 	var lat = position.coords.latitude
 	var lng = position.coords.longitude	
 	
-	// 지도 생성 및 표시
-	var container = document.getElementById('map'),
-		options = {
-			 center: new kakao.maps.LatLng(lat, lng),
-			 level: 3
+	// 마커를 클릭했을 때 해당 장소의 상세정보를 보여줄 커스텀오버레이입니다
+	var placeOverlay = new kakao.maps.CustomOverlay({zIndex:1}), 
+		contentNode = document.createElement('div'), // 커스텀 오버레이의 컨텐츠 엘리먼트 입니다 
+		markers = [], // 마커를 담을 배열입니다
+		currCategory = ''; // 현재 선택된 카테고리를 가지고 있을 변수입니다
+	 
+	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		mapOption = {
+			center: new kakao.maps.LatLng(lat, lng), // 지도의 중심좌표
+			level: 5 // 지도의 확대 레벨
 		};
-	var map = new kakao.maps.Map(container, options);
+		
+	// 지도 생성 및 표시
+	var map = new kakao.maps.Map(mapContainer, mapOption); 
 
 	// 마커 표시
 	var markerPosition  = new kakao.maps.LatLng(lat, lng); 
