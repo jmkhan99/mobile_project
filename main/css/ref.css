@@ -10,7 +10,7 @@ h1, h2 {display: none;}
 /* 푸드 리스트 */
 .memo_box {width: 100%;}
 .memo_box>fieldset {width:100%; position:relative; margin-bottom: 40px; box-sizing:border-box; padding:10px;}
-.memo_box legend {font-size:20px;}
+.memo_box legend {font-size:18px;}
 .memo_box select, .memo_box input {font-size: 15px;}
 .input_top {display:flex; flex-direction:row; margin-top: 10px; margin-bottom: 20px;}
 .input_top>#food_category{margin-right:5%;}
