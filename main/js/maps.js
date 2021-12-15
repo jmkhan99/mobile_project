@@ -1,4 +1,5 @@
-﻿navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
+﻿$(function(){
+navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
 function on_geo(position){
 	var lat = position.coords.latitude
@@ -212,6 +213,9 @@ function map_on(lat,lng) {
 	}  
 }
 
+
+	
+});
 
 
 
