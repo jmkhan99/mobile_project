@@ -50,4 +50,14 @@
 			ham_menu_box.stop().animate({'right': '-85%'},300);			
 		})
 	}
+	
+	// apk 용 맵 대체 링크
+	$('.map_link').click(function(){
+		var new_window = confirm('맵 사용을 위해 브라우저 새 창을 여시겠습니까?');
+		console.log(new_window)
+		if(new_window==true){
+			// 모바일용
+			window.open("https://jmkhan99.github.io/mobile_project/main/maps.html","");
+		}
+	});
 });
