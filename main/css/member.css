@@ -1,0 +1,6 @@
+﻿/* 회원가입과 같은 css 사용 */
+
+/* 메인 페이지 값 조정 */
+#main {padding-bottom: var(--footer-height);}
+
+#do_id_signup {margin-bottom: 20px;}
