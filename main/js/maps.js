@@ -1,5 +1,4 @@
 ﻿$(function(){
-alert('a');
 navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
 function on_geo(position){
