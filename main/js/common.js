@@ -54,6 +54,6 @@
 	/* apk용 맵페이지 링크 */
 	$('.map_link').click(function(e){
 	e.preventDefault();
-	window.open("https://jmkhan99.github.io/mobile_project/main/maps.html", "");	
+	location.href='https://jmkhan99.github.io/mobile_project/main/maps.html';
 	});
 });
