@@ -211,11 +211,10 @@ function map_on(lat,lng) {
 			el.className = 'on';
 		} 
 	}  
-}
-
-
-	
+}	
 });
+
+
 
 
 
