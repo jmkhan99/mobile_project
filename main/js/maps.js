@@ -217,10 +217,10 @@
 	if(localStorage.getItem('path')){
 		var path = localStorage.getItem('path');
 		$('.home_link').attr('href',path+'home.html');
-		$('.ref_link').attr('href','path+'ref.html');
-		$('.recipes_link').attr('href','path+'recipes.html');
-		$('.maps_link').attr('href','path+'maps.html');
-		$('.timer_link').attr('href','path+'timer.html');
+		$('.ref_link').attr('href',path+'ref.html');
+		$('.recipes_link').attr('href',path+'recipes.html');
+		$('.maps_link').attr('href',path+'maps.html');
+		$('.timer_link').attr('href',path+'timer.html');
 	}
 }); // 제이쿼리 끝
 
