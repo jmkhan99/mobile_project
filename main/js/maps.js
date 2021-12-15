@@ -1,4 +1,10 @@
 ﻿$(function(){
+	$('.back_arrow').click(function(e){
+		e.preventDefault();
+		window.close();	
+	});
+	
+	// 지도 시작
 	navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
 	function on_geo(position){
@@ -213,15 +219,6 @@
 		}  
 	} // map_on() 함수 끝
 	
-	// 맵 페이지 푸터 링크 연결 
-	if(localStorage.getItem('path')){
-		var path = localStorage.getItem('path');
-		$('.home_link').attr('href',path+'home.html');
-		$('.ref_link').attr('href',path+'ref.html');
-		$('.recipes_link').attr('href',path+'recipes.html');
-		$('.maps_link').attr('href',path+'maps.html');
-		$('.timer_link').attr('href',path+'timer.html');
-	}
 }); // 제이쿼리 끝
 
 
