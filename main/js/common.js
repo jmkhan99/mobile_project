@@ -52,8 +52,9 @@
 	}
 	
 	// apk 용 맵 대체 링크
-	$('.map_link').click(function(){
-		var new_window = confirm('맵 사용을 위해 브라우저 새 창을 여시겠습니까?');
+	$('.map_link').click(function(e){
+		e.preventDefault();
+		var new_window = confirm('지도 사용을 위해 브라우저 새 창을 여시겠습니까?');
 		console.log(new_window)
 		if(new_window==true){
 			// 모바일용

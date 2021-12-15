@@ -1,5 +1,6 @@
 ﻿$(function(){
-	$('.back_arrow').click(function(e){
+	/* apk에서 브라우저 창 닫기 */
+	$('.close_btn').click(function(e){
 		e.preventDefault();
 		window.close();	
 	});
