@@ -46,7 +46,8 @@ function on_geo(position){
 		} else {
 			target.attachEvent('on' + type, callback);
 		}
-	}	
+	}
+
 	// 카테고리 검색을 요청하는 함수입니다
 	function searchPlaces() {
 		if (!currCategory) {
@@ -120,7 +121,8 @@ function on_geo(position){
 		markers.push(marker);  // 배열에 생성된 마커를 추가합니다
 
 		return marker;
-	}	
+	}
+
 	// 지도 위에 표시되고 있는 마커를 모두 제거합니다
 	function removeMarker() {
 		for ( var i = 0; i < markers.length; i++ ) {
@@ -192,7 +194,7 @@ function on_geo(position){
 		if (el) {
 			el.className = 'on';
 		} 
-	} 	
+	}  	
 }
 function error_geo(){
 	return;
