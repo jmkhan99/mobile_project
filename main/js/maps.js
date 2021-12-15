@@ -3,17 +3,21 @@
 function on_geo(position){
 	var lat = position.coords.latitude
 	var lng = position.coords.longitude	
+	
+	// 지도 생성 및 표시
 	var container = document.getElementById('map'),
 		options = {
 			 center: new kakao.maps.LatLng(lat, lng),
 			 level: 3
 		};
 	var map = new kakao.maps.Map(container, options);
-	var markerPosition  = new kakao.maps.LatLng(lat, lng); 
 
+	// 마커 표시
+	var markerPosition  = new kakao.maps.LatLng(lat, lng); 
 	var marker = new kakao.maps.Marker({
 		position: markerPosition
 	});
+	marker.setMap(map);
 }
 function error_geo(){
 	return;
