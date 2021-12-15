@@ -13,7 +13,7 @@ function on_geo(position){
 
 	var marker = new kakao.maps.Marker({
 		position: markerPosition
-	}
+	});
 }
 function error_geo(){
 	return;
