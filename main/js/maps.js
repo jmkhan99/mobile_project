@@ -1,10 +1,19 @@
 ﻿navigator.geolocation.getCurrentPosition(on_geo, error_geo) 
 
+
 function on_geo(position){
 	var lat = position.coords.latitude
-	var lng = position.coords.longitude	
-	
-	// 마커를 클릭했을 때 해당 장소의 상세정보를 보여줄 커스텀오버레이입니다
+	var lng = position.coords.longitude
+	console.log(lat);
+	console.log(lng);
+	map_on();
+}
+function error_geo(){
+	return;
+}
+
+function map_on(lat,lng) {
+		// 마커를 클릭했을 때 해당 장소의 상세정보를 보여줄 커스텀오버레이입니다
 	var placeOverlay = new kakao.maps.CustomOverlay({zIndex:1}), 
 		contentNode = document.createElement('div'), // 커스텀 오버레이의 컨텐츠 엘리먼트 입니다 
 		markers = [], // 마커를 담을 배열입니다
@@ -201,10 +210,7 @@ function on_geo(position){
 		if (el) {
 			el.className = 'on';
 		} 
-	}  	
-}
-function error_geo(){
-	return;
+	}  
 }
 
 
