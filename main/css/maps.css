@@ -6,7 +6,7 @@
 h1, h2 {display:none;}
 
 /* header */
-.close_btn {display:block; margin-right:var(--padding-side); color: var(--main-bg-color); font-size:17px;}
+#header .close_btn {display:block; margin-right:var(--padding-side); color: var(--main-bg-color); width:32px; font-size:17px; text-align:right;}
 
 /* 지도 */
 .map_wrap, .map_wrap * {margin:0; padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
