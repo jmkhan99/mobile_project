@@ -6,7 +6,7 @@ function on_geo(position){
 	var lng = position.coords.longitude
 	console.log(lat);
 	console.log(lng);
-	map_on();
+	map_on(lat,lng);
 }
 function error_geo(){
 	return;
