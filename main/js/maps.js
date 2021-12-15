@@ -1,7 +1,7 @@
 ﻿$(function(){
 	$('.back_arrow').click(function(e){
 		e.preventDefault();
-		history.go(-1);	
+		window.close();	
 	});
 	
 	// 지도 시작

@@ -50,10 +50,4 @@
 			ham_menu_box.stop().animate({'right': '-85%'},300);			
 		})
 	}
-	
-	/* apk용 맵페이지 링크 */
-	$('.map_link').click(function(e){
-	e.preventDefault();
-	location.href='https://jmkhan99.github.io/mobile_project/main/maps.html';
-	});
 });
