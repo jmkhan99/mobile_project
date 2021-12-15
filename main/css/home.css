@@ -13,21 +13,18 @@ h2 {display:none;}
 .home_header .main_logo .sub_title {font-size:25px; position:absolute; left:0px; top:55px; white-space:nowrap;}
 .home_header .hamburger_box img {display:block; margin-right:var(--padding-side);}
 
-/* 검색 */
-.search_box {margin:0 var(--padding-side);}
-.search_box select{background-color:#cccccc; padding:10px 10px; font-size:17px; color:var(--main-bg-color); border-radius:60px; box-sizing:border-box; width:48%;}
-.guide_text {font-size:18px; margin-top: 30px; margin-bottom: 30px;}
-.select_box {display:flex; flex-direction:row; justify-content:space-between; margin-bottom:5px;}
-.select_box label {width:100%; position:relative;}
-.select_box label>img {width: 12px; position:absolute; top:50%; right:20px; transform:translate(0, -50%);}
-.select_box select {-webkit-appearance:none; appearance:none; width:100%;}
-.select_box label:first-child {margin-right:5%;}
-.search_input_box {border-bottom: 1px solid #e2e2e2; width:100%; position:relative; margin-bottom:35px;}
-.search_input_box label>img {width: 23px; position:absolute; top:50%; transform:translate(0, -50%)}
-.search_input_box .search_input {padding:15px 10px; padding-left:35px; font-size:20px; width:100%; box-sizing:border-box;}
+/* 주요 서비스 */
+.main_service {width:100%; padding:var(--padding-side); box-sizing:border-box; margin-bottom: 5px; margin-top:10px;}
+.ms_link_box {width:100%; display:flex; flex-direction:row; justify-content:space-between; margin-bottom: 30px;}
+.ms_link_box a {width:30%; display:flex; flex-direction:column; align-items:center; box-sizing:border-box; border:1px solid #cccccc; border-radius: 4px; padding:10px; position:relative;}
+.ms_link_box a:first-child, .ms_link_box a:nth-child(2) {margin-right:4.5%;}
+.ms_link_box a span {display:block; width:100%; font-size:17px; box-sizing:border-box; text-align:center; margin-bottom:10px; position:absolute; bottom:0;}
+.ms_link_box a img {width:70%; margin-bottom:25px;}
+.border {background-color:#cccccc; height:1px; width:100%; padding:0 var(--padding-side); box-sizing:border-box;}
 
 /* 메뉴 부분 */
 .menu1 {width: 100%; margin:0 auto; background-color:var(--main-bg-color);}
+.menu1_title {display:block; padding:0 var(--padding-side); box-sizing:border-box; margin-bottom: 20px; font-size: 18px;}
 .menu1>div {display:flex; flex-direction:row; margin-bottom:20px;}
 .panel_box {width:33.3%; display:flex; justify-content:center;}
 .menu1 a {width:60%; box-sizing:border-box; margin:0; border:none; display:flex; flex-direction: column; align-items:center;}
