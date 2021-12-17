@@ -16,7 +16,7 @@
 		map_on(lat,lng);
 	}
 	function error_geo(){
-		return;
+		alert('사용자 위치를 알 수 없습니다.')
 	}
 
 	function map_on(lat,lng) {
