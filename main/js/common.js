@@ -52,7 +52,7 @@
 	}
 	
 	// apk 용 맵 대체 링크
-	$('.map_link').click(function(e){
+/* 	$('.map_link').click(function(e){
 		e.preventDefault();
 		var new_window = confirm('지도 사용을 위해 브라우저 새 창을 여시겠습니까?');
 		console.log(new_window)
@@ -60,5 +60,5 @@
 			// 모바일용
 			window.open("https://jmkhan99.github.io/mobile_project/main/maps.html","");
 		}
-	});
+	});	 */
 });
