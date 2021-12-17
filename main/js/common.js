@@ -52,12 +52,11 @@
 	}
 	
 	// apk 용 맵 대체 링크
-/* 	$('.map_link').click(function(e){
+ 	$('.map_link').click(function(e){
 		e.preventDefault();
 		var new_window = confirm('지도 사용을 위해 브라우저 새 창을 여시겠습니까?');
-		console.log(new_window)
 		if(new_window==true){
-			window.open("http://www.hschool.co.kr/test_eighteen/05/project05/main/maps_apk.html","");
+			window.open("https://jmkhan99.github.io/mobile_project/main/maps_apk.html","");
 		}
-	});	 */
+	});
 });
